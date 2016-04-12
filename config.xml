@@ -50,6 +50,7 @@
     <permission>hudson.model.Computer.Disconnect:nichtsnutz</permission>
     <permission>hudson.model.Computer.Disconnect:petfrank</permission>
     <permission>hudson.model.Computer.Disconnect:radiomix</permission>
+    <permission>hudson.model.Hudson.Administer:anonymous</permission>
     <permission>hudson.model.Hudson.Administer:clee1</permission>
     <permission>hudson.model.Hudson.Administer:nichtsnutz</permission>
     <permission>hudson.model.Hudson.Administer:petfrank</permission>
