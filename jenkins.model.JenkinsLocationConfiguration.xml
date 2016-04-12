@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jenkins.model.JenkinsLocationConfiguration>
+  <adminAddress>devops@elemica.com</adminAddress>
+  <jenkinsUrl>http://jenkins-mercury-prd.build-virginia-dev.elemica2.com:9090/</jenkinsUrl>
+</jenkins.model.JenkinsLocationConfiguration>
