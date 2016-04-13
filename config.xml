@@ -5,8 +5,19 @@
   <numExecutors>3</numExecutors>
   <mode>NORMAL</mode>
   <useSecurity>true</useSecurity>
-  <authorizationStrategy class="hudson.security.AuthorizationStrategy$Unsecured"/>
-  <securityRealm class="hudson.security.LegacySecurityRealm"/>
+  <authorizationStrategy class="hudson.security.GlobalMatrixAuthorizationStrategy">
+    <permission>hudson.model.Hudson.Administer:clee1</permission>
+    <permission>hudson.model.Hudson.Administer:petfrank</permission>
+    <permission>hudson.model.Hudson.Administer:radiomix</permission>
+    <permission>hudson.model.Hudson.Administer:sthompson22</permission>
+  </authorizationStrategy>
+  <securityRealm class="org.jenkinsci.plugins.GithubSecurityRealm">
+    <githubWebUri>https://github.com</githubWebUri>
+    <githubApiUri>https://api.github.com</githubApiUri>
+    <clientID>3bd082a85f908be196cb</clientID>
+    <clientSecret>a63684f85d07258edbcbe03451af638112bb7ce5</clientSecret>
+    <oauthScopes>read:org,user:email</oauthScopes>
+  </securityRealm>
   <disableRememberMe>false</disableRememberMe>
   <projectNamingStrategy class="jenkins.model.ProjectNamingStrategy$DefaultProjectNamingStrategy"/>
   <workspaceDir>${ITEM_ROOTDIR}/workspace</workspaceDir>
